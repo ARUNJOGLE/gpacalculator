@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA Calculator by ARUN JOGLE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- vendor links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end of vendor links -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        GPA Calculator ©️
+        <a
+          id="heroLink"
+          href="https://5f53ec90ac242.site123.me/"
+          target="_blank"
+          >Arun Jogle</a
+        >
+      </h1>
+      <div class="form-columns">
+        <div class="form-column">
+          <label for="studentName">Student Name:</label>
+          <input type="text" id="studentName" placeholder="Arun Jogle" />
+          <label for="regNumber">Registration Number:</label>
+          <input type="text" id="regNumber" placeholder="811721001001" />
+          <label for="department">Department:</label>
+          <input
+            type="text"
+            id="department"
+            placeholder="ARTIFICIAL INTELLIGENCE"
+          />
+        </div>
+        <div class="form-column">
+          <label for="year">Year:</label>
+          <input type="text" id="year" placeholder="1" />
+          <label for="semester">Semester:</label>
+          <input type="text" id="semester" placeholder="1" />
+          <label for="college">College Name:</label>
+          <input
+            type="text"
+            id="college"
+            placeholder="K RAMAKRISHNAN COLLEGE OF TECH"
+          />
+        </div>
+        <div class="form-column">
+          <label for="subjects">Enter subject names:</label>
+          <input
+            type="text"
+            id="subjects"
+            placeholder="Subject1 , Subject2 ..."
+          />
+          <label for="credits">Enter subject credits:</label>
+          <input type="text" id="credits" placeholder="Credits1 Credits2 ..." />
+          <label for="grades">Enter grades:</label>
+          <input type="text" id="grades" placeholder="Grade1 Grade2 ..." />
+        </div>
+      </div>
+      <button id="calculateGPA">Calculate GPA</button>
+      <button id="toPdf">Export to PDF</button>
+      <button id="toCsv">Export to CSV</button>
+      <div id="result"></div>
+      <table id="outputTable" style="display: none">
+        <thead>
+          <tr>
+            <th>S.no</th>
+            <th>Subject name</th>
+            <th>Subject Credits</th>
+            <th>Grade</th>
+            <th>Points</th>
+            <th>Product</th>
+            <th>%</th>
+          </tr>
+        </thead>
+        <tbody id="outputBody"></tbody>
+      </table>
+    </div>
+    <div id="celebrationAnimation"></div>
+    <script src="./localVendor/jspdf.umd.min.js"></script>
+    <script src="./localVendor/jspdf.plugin.autotable.js"></script>
+    <script src="./localVendor/html2pdf.bundle.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.14/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  </body>
+</html>
+
+<!-- 
+<script src="./localVendor/html2pdf.bundle.min.js"></script>
+<script src="./localVendor/jspdf.umd.min.js"></script>
+<script src="./app.js"></script> -->
